@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Aqui comienza el Media Query mas pequeño con minimo de 0 a maximo de 500 pixeles */
+
+@media (max-width: 500px) 
+{
+
+    body{
+        background-color:rgba(218, 88, 148, 0.3);
+        width: auto;
+    }    
+    
+    .img{
+        width: 98%;
+    }
+
+    .izq{
+        width: 98%;
+        height: 50%;
+    }
+
+    .der{
+        width: 98%;
+        height: 50%;
+        border-image-width: auto;
+    }
+    
+    .flexbox-container{
+        background-color: rgb(181, 127, 231);
+        width: 98%;
+    }
+    
+    .caja-ox{
+        background-color: rgb(179, 146, 173);
+        height: 80px;
+        border: 1px solid grey;
+        margin: 5px;
+    }
+}
+
+/*Aqui termina el Media Query mas pequeño con maximo 480/500 pixeles */
+
+
+
+/*Aqui comienza el Media Query mediano con minimo de 481 a maximo de 775 pixeles */
+@media (min-width: 501px) and (max-width: 770px) 
+{
+    body{
+        background-color: rgba(48, 182, 57, 0.35);
+    }
+    .img{
+        width: auto;
+    }
+    .flexbox-container{
+        background-color: rgb(107, 177, 110);
+        /*display: flex;  si lo colocamos aqui, se rompe responsive medio    */
+    }
+    .izq{
+        width: 40%;
+        height: 50%;
+    }
+
+    .der{
+        width: 50%;
+        height: 50%;
+    }
+    .caja-ox{
+        background-color: rgb(85, 82, 241);
+        height: 95px;
+        border: 1px solid brown;
+        margin: 3px;
+    }
+    
+}    
+
+/*Aqui termina el Media Query mediano desde 481 hasta 775 pixeles en adelante */
+
+
+
+/*Aqui comienza el Media Query mas grande desde 775 pixeles en adelante */
+
+@media (min-width: 775px) and (max-width: 2880px) 
+{
+
+    body{
+        background-color:rgb(103, 102, 104);
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        background-color: rgb(233, 250, 85);
+    }
+    h2{
+        background-color: rgba(218, 218, 2, 0.884);
+    }
+    h3{
+        background-color: rgb(240, 250, 134);
+    }
+    h4{
+        background-color: rgb(248, 224, 7) ;
+    }
+    .img{
+        width: auto;
+    }
+
+    .arriba{
+        background-color:rgba (17, 168, 3,0.25);
+        color:darkslategrey;
+        width: 90%;
+        height: 300px;
+    }
+
+    .medio{
+        padding: 1px;
+        background-color: rgb(19, 243, 22);
+        color:darkslategray;
+        width: 98%;
+        height: 400px;
+    }
+
+    .izq{
+        /*background-color: lightgreen;*/
+        width: 30%;
+        height: auto;
+        float: left;
+    }
+
+    .der{
+        background-color: lightslategray;
+        width: auto;
+        height: auto;
+        float: right;
+    }
+    .abajo{
+        background-color:  rgb(8, 197, 68);
+        color: darkslateblue;
+        width: 98%;
+        height: 400px;
+    }
+    .flexbox-container{
+        border: 1,5px solid darkgrey;
+        background-color: cadetblue;
+        margin: 0 auto;    /* hace que contenedor padre, se ubique equidistante de los bordes.  */         
+        display: flex;  /*Overflow: hidden = oculta lo que excede de posición.  
+                        Overflow: scroll = habilita el scroll para desplazarse.  
+                        */
+        flex-direction: row;  /*por defecto es row = horizontal.
+                                row-reverse = horizontal, invertida.
+                                column = vertical o columna.
+                                column-reverse = vertical, invertida.
+                                */
+        flex-wrap: nowrap;  /*por defecto nowrap = ubica al lado, horizontal
+                                wrap = las ubica en forma de grilla o tabla.
+                            */
+    }
+    .caja-ox{
+        border: 2px solid grey;
+        background-color:aquamarine;
+        color:blue;
+        font-family:Verdana, Tahoma, sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: 5px;
+    }
+    p{
+        background-color:rgb(55, 51, 66);
+        color: rgb(172, 139, 235);
+    }
+    
+    .enlace1{
+        color:darkblue;
+        font-size: 22px;
+    }
+    
+    .tdContacto{
+        background-color: rgba(51, 31, 90, 0.14);
+    }
+    
+    .label{
+        background-color: rgb(181, 185, 181);
+        color: rgb(117, 117, 151);
+        font-weight: bold;
+    }
+    
+    .label_txt{
+        color: slategray;
+    }
+    
+    
+
+    .tdfooter{
+        background-color:mediumseagreen;
+        text-decoration: double;
+        color: rgb(24, 24, 173);
+        align-items: center;
+    }
+
+}
+/*Aqui termina el Media Query mas grande desde 780 pixeles en adelante a 2880 */
+

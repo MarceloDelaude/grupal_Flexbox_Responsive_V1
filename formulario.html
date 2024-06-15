@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es" align="center">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="estilos.css">
+    <link rel="icon" href="../flexbox_Responsive/img/grupo16_Qui.ico">
+    <title>Formulario_1</title>
+</head>
+<body>
+    <h1>Formulario de contacto.</h1>
+    <form class="tdContacto"> 
+        <img src="img/grupo16_Qui2.jpg">
+        >>><br/>
+        
+        <input type="text" placeholder="Ingrese Nombre y Apellido" 
+        maxlength="35" size="57"><br/><br/>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su Usuario">
+        <br/><br/>
+        <input type="text" placeholder="Ingrese su DNI" maxlength="8" size="24"><br/>
+        <!--<label for="dni" class="label"</label>>>Ingrese su DNI_solo números</label><br/><br/>-->
+        <br/>
+        <input type="email" id="email" placeholder="" ><br/>
+        <label for="email" class="label">Ingrese su e-mail.</label><br/>
+        <br/>
+        <label for="nacionalidad" class="label">Seleccione su nacionalidad.</label><br/>
+        <select>
+            <option value="1">Argentina </option>
+            <option value="2">Uruguaya </option>
+            <option value="3">Brasileña </option>
+            <option value="4">Chilena </option>
+        </select><br/><br/>
+        <input type= "checkbox" type="confirm" ><br/> 
+        <label class="label_txt"> Confirme para continuar.</label> 
+        <br/><br/>
+        <input type="color">Eige un color:
+        <br/>
+        <input type="range"><br/>deslizable.<br/>
+        <br/>
+        <input type="date"><br/>
+        <label for="fechaNacimiento" class="label">Marque su fecha de Nacimiento.</label><br/>
+        <br/>
+        <input type="month">
+        <br/>
+        <input type="time">
+        <br/>
+        <br><br>
+        <button type="submit"> Submit info</button>
+   
+    </form>
+    
+    <script src="index_Form.js"></script>
+
+</body>
+<footer><hr/>
+    <table  align="center" border="4" cellspacing="5">
+        <tr align="center">
+            <td class="tdfooter">
+                <a href="index_Flexbox(2).html" title="Ir a pagina del grupo"><h3>Vamos a la pagina del grupo 16.</h3></a>
+            </td>
+        </tr>
+        <tr align="center">
+            <td class="tdfooter">
+                <label><h3> Contacto y localización...</h3></label>
+            </td>
+            <td class="tdContacto">
+                <a class="enlace1" href="desarrolladores.html">Contactenos_--></a></td>
+            </td>
+        </tr>
+    </table>
+</footer>
+</html>
